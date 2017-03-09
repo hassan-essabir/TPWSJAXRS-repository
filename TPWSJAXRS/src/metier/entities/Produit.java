@@ -2,6 +2,8 @@ package metier.entities;
 
 import java.io.Serializable;
 
+import org.codehaus.jackson.annotate.JsonIgnore;
+
 public class Produit implements Serializable {
 
 	private Long idProduit;
@@ -41,7 +43,8 @@ public class Produit implements Serializable {
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
-
+	
+	@JsonIgnore
 	public Categorie getCategorie() {
 		return categorie;
 	}

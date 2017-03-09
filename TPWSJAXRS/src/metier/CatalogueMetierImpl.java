@@ -47,7 +47,7 @@ public class CatalogueMetierImpl implements ICatalogueMetier {
 	}
 
 	@Override
-	public List<Produit> produitParMC(String mc) {
+	public List<Produit> produitsParMC(String mc) {
 		List<Produit> prods = new ArrayList<Produit>();
 		for (Produit p : produits.values())
 			if (p.getDesignation().contains(mc))
@@ -99,8 +99,8 @@ public class CatalogueMetierImpl implements ICatalogueMetier {
 		produits.put(4L, new Produit(4L, "HP Imprimante Laser Laserjet", 1500,
 				"imp1.jpg", getCategorie(2L)));
 		produits.put(5L, new Produit(5L, "Canon Pixma MG 2440", 1000,
-				"imp2.jpg", getCategorie(3L)));
+				"imp2.jpg", getCategorie(2L)));
 		produits.put(6L, new Produit(6L, "HP LJ Pro CP1025 Color", 2200,
-				"imp3.jpg", getCategorie(3L)));
+				"imp3.jpg", getCategorie(2L)));
 	}
 }

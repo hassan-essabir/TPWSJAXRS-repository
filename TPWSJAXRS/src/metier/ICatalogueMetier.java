@@ -17,7 +17,7 @@ public interface ICatalogueMetier {
 
 	public List<Produit> produitParCat(Long idCat);
 
-	public List<Produit> produitParMC(String mc);
+	public List<Produit> produitsParMC(String mc);
 
 	public Categorie updateCategorie(Categorie c);
 
